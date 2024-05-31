@@ -1,38 +1,96 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+
+.myTextClass{
+  color: red;
+  font-size: 55px;
   text-align: center;
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.scoreContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  left: 400px;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.myTextClasss{
+  color: red;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.submitBtnCss[disabled] {
+  color: gray; 
+  background-color: #e0e0e0; 
+  cursor: not-allowed; 
+  opacity: 0.5; 
+}
+.submitBtnCss[disabled] {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submitBtnCss[disabled]:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: -5px;
+  left: 105%;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 1;
+  font-size: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.myQuestion{
+  color: green;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.myoption{
+  color: green;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.submitBtnCss{
+  padding: 15px;
+  background-color: #151515;
+  color: green;
+  border: 2px solid red;
+  border-radius: 20px ;
+  cursor: pointer;
+  transition: 500ms;
+  width: 225px;
+  font-weight: 800;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.submitBtnCss:hover{
+  box-shadow: 4px 4px 12px green;
+}
+body{
+  background-color: #151515;
+}
+.radioBtns:hover{
+  cursor: pointer;
+}
+.radioLabels:hover{
+  cursor: pointer;
 }
